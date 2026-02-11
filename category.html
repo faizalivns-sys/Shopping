@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <p>Free Shipping on Orders Over $50</p>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <h1>ShopEasy</h1>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-icons">
+                    <a href="login.html" class="icon-link" id="account-link"><i class="fas fa-user"></i> <span id="account-text">Account</span></a>
+                    <a href="wishlist.html" class="icon-link"><i class="fas fa-heart"></i> Wishlist</a>
+                    <a href="cart.html" class="icon-link cart-icon">
+                        <i class="fas fa-shopping-cart"></i> Cart 
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="active">Categories</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="clothing.html">Clothing</a></li>
+                    <li><a href="home-kitchen.html">Home & Kitchen</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Category Banner -->
+    <section class="category-banner">
+        <div class="container">
+            <h1 id="category-title">All Categories</h1>
+            <p>Browse our wide selection of products</p>
+        </div>
+    </section>
+    
+    <!-- Category Products Section -->
+    <section class="category-products">
+        <div class="container">
+            <div class="filters-sidebar">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <div class="price-filter">
+                        <input type="range" min="0" max="500" value="500" class="slider" id="price-slider">
+                        <p>Max Price: $<span id="price-value">500</span></p>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Brands</h4>
+                    <div class="checkbox-filter">
+                        <label><input type="checkbox"> Brand A</label>
+                        <label><input type="checkbox"> Brand B</label>
+                        <label><input type="checkbox"> Brand C</label>
+                        <label><input type="checkbox"> Brand D</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Ratings</h4>
+                    <div class="rating-filter">
+                        <label><input type="radio" name="rating" checked> All Ratings</label>
+                        <label><input type="radio" name="rating"> ★★★★★ (5)</label>
+                        <label><input type="radio" name="rating"> ★★★★☆ (4+)</label>
+                        <label><input type="radio" name="rating"> ★★★☆☆ (3+)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-content">
+                <div class="products-header">
+                    <div class="sort-options">
+                        <label>Sort by:</label>
+                        <select id="sort-select">
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Customer Rating</option>
+                            <option>Newest Arrivals</option>
+                        </select>
+                    </div>
+                    <p id="product-count">Showing 12 products</p>
+                </div>
+                
+                <div class="products-grid" id="category-products-grid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+                
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ShopEasy</h3>
+                    <p>Your one-stop destination for all your shopping needs. Quality products at affordable prices.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main St, City</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@shopeasy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ShopEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="category.js"></script>
+</body>
+</html>

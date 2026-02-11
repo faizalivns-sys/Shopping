@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <p>Free Shipping on Orders Over $50</p>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <h1>ShopEasy</h1>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-icons">
+                    <a href="#" class="icon-link"><i class="fas fa-user"></i> Account</a>
+                    <a href="wishlist.html" class="icon-link"><i class="fas fa-heart"></i> Wishlist</a>
+                    <a href="cart.html" class="icon-link cart-icon">
+                        <i class="fas fa-shopping-cart"></i> Cart 
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="clothing.html">Clothing</a></li>
+                    <li><a href="home-kitchen.html">Home & Kitchen</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Account Section -->
+    <section class="account-section">
+        <div class="container">
+            <div class="account-container">
+                <div class="account-sidebar">
+                    <div class="user-profile">
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 id="user-name">John Doe</h3>
+                        <p id="user-email">john.doe@example.com</p>
+                    </div>
+                    
+                    <nav class="account-nav">
+                        <ul>
+                            <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i> My Orders</a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i> Wishlist</a></li>
+                            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Addresses</a></li>
+                            <li><a href="#"><i class="fas fa-credit-card"></i> Payment Methods</a></li>
+                            <li><a href="#"><i class="fas fa-user-edit"></i> Account Details</a></li>
+                            <li><a href="#" id="logout-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="account-content">
+                    <div class="account-dashboard">
+                        <h2>Account Dashboard</h2>
+                        
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>12</h3>
+                                    <p>Total Orders</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>8</h3>
+                                    <p>Wishlist Items</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-tag"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>3</h3>
+                                    <p>Pending Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-orders">
+                            <h3>Recent Orders</h3>
+                            <table class="orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Total</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#ORD-7841</td>
+                                        <td>Dec 1, 2023</td>
+                                        <td><span class="status delivered">Delivered</span></td>
+                                        <td>$129.99</td>
+                                        <td><a href="#" class="btn-view">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-7832</td>
+                                        <td>Nov 28, 2023</td>
+                                        <td><span class="status shipped">Shipped</span></td>
+                                        <td>$89.99</td>
+                                        <td><a href="#" class="btn-view">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-7825</td>
+                                        <td>Nov 25, 2023</td>
+                                        <td><span class="status processing">Processing</span></td>
+                                        <td>$149.99</td>
+                                        <td><a href="#" class="btn-view">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ShopEasy</h3>
+                    <p>Your one-stop destination for all your shopping needs. Quality products at affordable prices.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main St, City</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@shopeasy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ShopEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="account.js"></script>
+</body>
+</html>
