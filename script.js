@@ -62,7 +62,22 @@ document.addEventListener('DOMContentLoaded', function() {
     renderProducts();
     updateCartCount();
     initMobileMenu();
+    initHeroCarousel();
 });
+
+// Hero Carousel
+function initHeroCarousel() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    if (slides.length === 0) return;
+    
+    let currentSlide = 0;
+    
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 3000);
+}
 
 // Initialize mobile menu functionality
 function initMobileMenu() {
