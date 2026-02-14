@@ -157,6 +157,18 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 250px;
+    }
+}
+
 .hero-carousel {
     position: absolute;
     top: 0;
