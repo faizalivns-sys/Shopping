@@ -4,7 +4,7 @@ const products = [
         id: 1,
         name: "Wireless Bluetooth Headphones",
         price: 79.99,
-        image: "https://placehold.co/300x300"
+        image: "assest/image/professional wire.png"
     },
     {
         id: 2,
