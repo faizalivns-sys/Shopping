@@ -4,7 +4,7 @@ const products = [
         id: 1,
         name: "Wireless Bluetooth Headphones",
         price: 79.99,
-        image: "assest/image/professional wire.png"
+        image: "assest/image/professional wireles.png"
     },
     {
         id: 2,
