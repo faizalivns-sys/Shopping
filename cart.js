@@ -6,8 +6,8 @@ const totalElement = document.getElementById('total');
 const checkoutBtn = document.getElementById('checkout-btn');
 const cartCountElement = document.querySelector('.cart-count');
 
-// Tax rate (8%)
-const TAX_RATE = 0.08;
+// Tax rate (18% GST)
+const TAX_RATE = 0.18;
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
@@ -56,7 +56,7 @@ function renderCartItems(items) {
             </div>
             <div class="cart-item-details">
                 <h3>${item.name}</h3>
-                <p class="cart-item-price">$${item.price.toFixed(2)}</p>
+                <p class="cart-item-price">₹${item.price.toFixed(0)}</p>
             </div>
             <div class="cart-item-actions">
                 <button class="btn-remove" onclick="removeFromCart(${index})">
@@ -87,9 +87,9 @@ function updateSummary(amounts) {
         amounts = { subtotal, tax, total: amounts };
     }
     
-    if (subtotalElement) subtotalElement.textContent = `$${amounts.subtotal.toFixed(2)}`;
-    if (taxElement) taxElement.textContent = `$${amounts.tax.toFixed(2)}`;
-    if (totalElement) totalElement.textContent = `$${amounts.total.toFixed(2)}`;
+    if (subtotalElement) subtotalElement.textContent = `₹${amounts.subtotal.toFixed(0)}`;
+    if (taxElement) taxElement.textContent = `₹${amounts.tax.toFixed(0)}`;
+    if (totalElement) totalElement.textContent = `₹${amounts.total.toFixed(0)}`;
 }
 
 // Remove item from cart

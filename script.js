@@ -3,49 +3,49 @@ const products = [
     {
         id: 1,
         name: "Wireless Bluetooth Headphones",
-        price: 79.99,
+        price: 6499,
         image: "assest/image/professional wireles.png"
     },
     {
         id: 2,
         name: "Smartphone Case",
-        price: 19.99,
+        price: 1499,
         image: "https://placehold.co/300x300"
     },
     {
         id: 3,
         name: "Fitness Tracker Watch",
-        price: 49.99,
+        price: 3999,
         image: "https://placehold.co/300x300"
     },
     {
         id: 4,
         name: "Portable Power Bank",
-        price: 29.99,
+        price: 2299,
         image: "https://placehold.co/300x300"
     },
     {
         id: 5,
         name: "Coffee Maker",
-        price: 89.99,
+        price: 7499,
         image: "https://placehold.co/300x300"
     },
     {
         id: 6,
         name: "Desk Lamp",
-        price: 24.99,
+        price: 1999,
         image: "https://placehold.co/300x300"
     },
     {
         id: 7,
         name: "Backpack",
-        price: 39.99,
+        price: 3199,
         image: "https://placehold.co/300x300"
     },
     {
         id: 8,
         name: "Water Bottle",
-        price: 14.99,
+        price: 999,
         image: "https://placehold.co/300x300"
     }
 ];
@@ -136,7 +136,7 @@ function renderProducts() {
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <div class="product-info">
                 <h3>${product.name}</h3>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">₹${product.price.toFixed(0)}</div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart
@@ -255,7 +255,7 @@ function renderFilteredProducts(filteredProducts) {
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <div class="product-info">
                 <h3>${product.name}</h3>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">₹${product.price.toFixed(0)}</div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart

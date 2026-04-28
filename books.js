@@ -3,28 +3,28 @@ const booksProducts = [
     {
         id: 9,
         name: "Novel Book",
-        price: 12.99,
+        price: 999,
         image: "https://placehold.co/300x300",
         category: "Books"
     },
     {
         id: 11,
         name: "Cookbook",
-        price: 24.99,
+        price: 1999,
         image: "https://placehold.co/300x300",
         category: "Books"
     },
     {
         id: 23,
         name: "Science Fiction Novel",
-        price: 14.99,
+        price: 1199,
         image: "https://placehold.co/300x300",
         category: "Books"
     },
     {
         id: 24,
         name: "Biography",
-        price: 19.99,
+        price: 1599,
         image: "https://placehold.co/300x300",
         category: "Books"
     }
@@ -71,7 +71,7 @@ function renderBooksProducts(products) {
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p class="product-category">${product.category}</p>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">₹${product.price.toFixed(0)}</div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart

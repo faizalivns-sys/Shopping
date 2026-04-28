@@ -3,28 +3,28 @@ const clothingProducts = [
     {
         id: 7,
         name: "Backpack",
-        price: 39.99,
+        price: 3199,
         image: "https://placehold.co/300x300",
         category: "Clothing"
     },
     {
         id: 10,
         name: "T-Shirt",
-        price: 19.99,
+        price: 1499,
         image: "https://placehold.co/300x300",
         category: "Clothing"
     },
     {
         id: 20,
         name: "Jeans",
-        price: 49.99,
+        price: 3999,
         image: "https://placehold.co/300x300",
         category: "Clothing"
     },
     {
         id: 21,
         name: "Running Shoes",
-        price: 89.99,
+        price: 7499,
         image: "https://placehold.co/300x300",
         category: "Clothing"
     }
@@ -71,7 +71,7 @@ function renderClothingProducts(products) {
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p class="product-category">${product.category}</p>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">₹${product.price.toFixed(0)}</div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart

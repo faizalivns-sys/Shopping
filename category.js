@@ -4,84 +4,84 @@ const categoryProducts = {
         {
             id: 1,
             name: "Wireless Bluetooth Headphones",
-            price: 79.99,
+            price: 6499,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         },
         {
             id: 2,
             name: "Smartphone Case",
-            price: 19.99,
+            price: 1499,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         },
         {
             id: 3,
             name: "Fitness Tracker Watch",
-            price: 49.99,
+            price: 3999,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         },
         {
             id: 4,
             name: "Portable Power Bank",
-            price: 29.99,
+            price: 2299,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         },
         {
             id: 5,
             name: "Coffee Maker",
-            price: 89.99,
+            price: 7499,
             image: "https://placehold.co/300x300",
             category: "Home & Kitchen"
         },
         {
             id: 6,
             name: "Desk Lamp",
-            price: 24.99,
+            price: 1999,
             image: "https://placehold.co/300x300",
             category: "Home & Kitchen"
         },
         {
             id: 7,
             name: "Backpack",
-            price: 39.99,
+            price: 3199,
             image: "https://placehold.co/300x300",
             category: "Clothing"
         },
         {
             id: 8,
             name: "Water Bottle",
-            price: 14.99,
+            price: 999,
             image: "https://placehold.co/300x300",
             category: "Home & Kitchen"
         },
         {
             id: 9,
             name: "Novel Book",
-            price: 12.99,
+            price: 999,
             image: "https://placehold.co/300x300",
             category: "Books"
         },
         {
             id: 10,
             name: "T-Shirt",
-            price: 19.99,
+            price: 1499,
             image: "https://placehold.co/300x300",
             category: "Clothing"
         },
         {
             id: 11,
             name: "Cookbook",
-            price: 24.99,
+            price: 1999,
             image: "https://placehold.co/300x300",
             category: "Books"
         },
         {
             id: 12,
             name: "Bluetooth Speaker",
-            price: 59.99,
+            price: 4999,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         }
@@ -90,35 +90,35 @@ const categoryProducts = {
         {
             id: 1,
             name: "Wireless Bluetooth Headphones",
-            price: 79.99,
+            price: 6499,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         },
         {
             id: 2,
             name: "Smartphone Case",
-            price: 19.99,
+            price: 1499,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         },
         {
             id: 3,
             name: "Fitness Tracker Watch",
-            price: 49.99,
+            price: 3999,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         },
         {
             id: 4,
             name: "Portable Power Bank",
-            price: 29.99,
+            price: 2299,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         },
         {
             id: 12,
             name: "Bluetooth Speaker",
-            price: 59.99,
+            price: 4999,
             image: "https://placehold.co/300x300",
             category: "Electronics"
         }
@@ -127,14 +127,14 @@ const categoryProducts = {
         {
             id: 7,
             name: "Backpack",
-            price: 39.99,
+            price: 3199,
             image: "https://placehold.co/300x300",
             category: "Clothing"
         },
         {
             id: 10,
             name: "T-Shirt",
-            price: 19.99,
+            price: 1499,
             image: "https://placehold.co/300x300",
             category: "Clothing"
         }
@@ -143,21 +143,21 @@ const categoryProducts = {
         {
             id: 5,
             name: "Coffee Maker",
-            price: 89.99,
+            price: 7499,
             image: "https://placehold.co/300x300",
             category: "Home & Kitchen"
         },
         {
             id: 6,
             name: "Desk Lamp",
-            price: 24.99,
+            price: 1999,
             image: "https://placehold.co/300x300",
             category: "Home & Kitchen"
         },
         {
             id: 8,
             name: "Water Bottle",
-            price: 14.99,
+            price: 999,
             image: "https://placehold.co/300x300",
             category: "Home & Kitchen"
         }
@@ -166,14 +166,14 @@ const categoryProducts = {
         {
             id: 9,
             name: "Novel Book",
-            price: 12.99,
+            price: 999,
             image: "https://placehold.co/300x300",
             category: "Books"
         },
         {
             id: 11,
             name: "Cookbook",
-            price: 24.99,
+            price: 1999,
             image: "https://placehold.co/300x300",
             category: "Books"
         }
@@ -261,7 +261,7 @@ function renderCategoryProducts(products) {
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p class="product-category">${product.category}</p>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">₹${product.price.toFixed(0)}</div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart

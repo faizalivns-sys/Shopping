@@ -3,84 +3,84 @@ const electronicsProducts = [
     {
         id: 1,
         name: "Wireless Bluetooth Headphones",
-        price: 79.99,
+        price: 6499,
         image: "https://placehold.co/300x300",
         category: "Audio"
     },
     {
         id: 2,
         name: "Smartphone Case",
-        price: 19.99,
+        price: 1499,
         image: "https://placehold.co/300x300",
         category: "Accessories"
     },
     {
         id: 3,
         name: "Fitness Tracker Watch",
-        price: 49.99,
+        price: 3999,
         image: "https://placehold.co/300x300",
         category: "Wearables"
     },
     {
         id: 4,
         name: "Portable Power Bank",
-        price: 29.99,
+        price: 2299,
         image: "https://placehold.co/300x300",
         category: "Accessories"
     },
     {
         id: 12,
         name: "Bluetooth Speaker",
-        price: 59.99,
+        price: 4999,
         image: "https://placehold.co/300x300",
         category: "Audio"
     },
     {
         id: 13,
         name: "Gaming Laptop",
-        price: 1299.99,
+        price: 109999,
         image: "https://placehold.co/300x300",
         category: "Laptops"
     },
     {
         id: 14,
         name: "Smartphone Pro",
-        price: 899.99,
+        price: 74999,
         image: "https://placehold.co/300x300",
         category: "Smartphones"
     },
     {
         id: 15,
         name: "Wireless Earbuds",
-        price: 129.99,
+        price: 10499,
         image: "https://placehold.co/300x300",
         category: "Audio"
     },
     {
         id: 16,
         name: "Tablet HD",
-        price: 349.99,
+        price: 28999,
         image: "https://placehold.co/300x300",
         category: "Tablets"
     },
     {
         id: 17,
         name: "Smart Watch Series 5",
-        price: 299.99,
+        price: 24999,
         image: "https://placehold.co/300x300",
         category: "Wearables"
     },
     {
         id: 18,
         name: "External SSD 1TB",
-        price: 149.99,
+        price: 12499,
         image: "https://placehold.co/300x300",
         category: "Accessories"
     },
     {
         id: 19,
         name: "4K Ultra HD Smart TV",
-        price: 799.99,
+        price: 66999,
         image: "https://placehold.co/300x300",
         category: "TV & Home Theater"
     }
@@ -129,7 +129,7 @@ function renderElectronicsProducts(products) {
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p class="product-category">${product.category}</p>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">₹${product.price.toFixed(0)}</div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart

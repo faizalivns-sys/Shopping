@@ -45,7 +45,7 @@ function renderWishlistItems(items) {
             <img src="${item.image}" alt="${item.name}" class="product-image">
             <div class="product-info">
                 <h3>${item.name}</h3>
-                <div class="product-price">$${item.price.toFixed(2)}</div>
+                <div class="product-price">₹${item.price.toFixed(0)}</div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart" onclick="addToCart(${index})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart

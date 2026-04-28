@@ -3,14 +3,14 @@ const homeKitchenProducts = [
     {
         id: 5,
         name: "Coffee Maker",
-        price: 89.99,
+        price: 7499,
         image: "https://placehold.co/300x300",
         category: "Home & Kitchen"
     },
     {
         id: 6,
         name: "Desk Lamp",
-        price: 24.99,
+        price: 1999,
         image: "https://placehold.co/300x300",
         category: "Home & Kitchen"
     },
@@ -71,7 +71,7 @@ function renderHomeKitchenProducts(products) {
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p class="product-category">${product.category}</p>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">₹${product.price.toFixed(0)}</div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart
